@@ -1,0 +1,12 @@
+
+.header{
+	display: flex;
+	flex-direction: row;
+
+	padding: 2%;
+}
+
+.date{
+	flex-grow: 1;
+	padding: 1%;
+}
