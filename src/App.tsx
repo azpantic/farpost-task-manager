@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Drawer from "./components/Drawer/Drawer";
+import "./style/Drawer.css"
+import "./style/Directories.css"
+import "./style/Text.css"
+import "./style/Default.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Drawer/>
+
     </div>
-  );
+    
+  )
 }
 
 export default App;
