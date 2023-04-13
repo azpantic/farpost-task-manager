@@ -2,6 +2,8 @@
 
 Веб-сайт списка дел, созданный с помощью React JS, TypeScript, Redux Toolkit и других инструментов.
 
+Ссылка на веб-версию: https://azpantic.github.io/farpost-task-manager/
+
 ![Пример интерфейса](https://github.com/azpantic/farpost-task-manager/blob/master/public/Task-App-Img.jpg)
 
 ## Описание
