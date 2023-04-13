@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# 📅 Tasks App (To-Do List)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Веб-сайт списка дел, созданный с помощью React JS, TypeScript, Redux Toolkit и других инструментов.
 
-## Available Scripts
+([Пример интерфейса](https://github.com/azpantic/farpost-task-manager/blob/master/public/Task-App-Img.jpg)
 
-In the project directory, you can run:
+## Описание
 
-### `npm start`
+- Применяется для организации ваших задач со следующими данными: название, описание, дата, пометка как завершенная и пометка как важная.
+- Задачи организованы в маршруты: сегодняшние задачи, важные задачи, незавершенные, завершенные, все задачи и задачи по каталогу (папке). Каталоги и задачи можно редактировать или удалять. Кроме того, существует основной каталог под названием «Главный», который нельзя редактировать или удалить.
+- Список задач может отображаться первым в: ближайшие, самые дальние, полные или неполные.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Используемые инструменты
 
-### `npm test`
+- React JS
+- TypeScript
+- CSS
+- Redux Toolkit
+- React Router DOM
+- HTML
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Команды для запуска
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` 
+git clone https://github.com/azpantic/farpost-task-manager.git
+cd tasks-app
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Observações
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Os dados de tarefas, diretórios e darkmode ficam salvos no localStorage do seu navegador. Você pode clicar no botão "delete all data" para removê-los do localStorage.
+- Para fins demonstrativos, o aplicativo possui uma lista padrão de 3 tarefas e 1 diretório chamado "Main".
