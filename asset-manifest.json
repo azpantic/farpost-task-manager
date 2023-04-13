@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/farpost-task-manager/static/css/main.746273b3.css",
-    "main.js": "/farpost-task-manager/static/js/main.0176c3db.js",
+    "main.css": "/farpost-task-manager/static/css/main.7812e708.css",
+    "main.js": "/farpost-task-manager/static/js/main.2cdfa8d8.js",
     "index.html": "/farpost-task-manager/index.html",
     "static/media/calendar.svg": "/farpost-task-manager/static/media/calendar.19a98bcf46b03d7a44e026bda16c6914.svg",
     "static/media/trash.svg": "/farpost-task-manager/static/media/trash.5cc9432e2708a6dcfe6592df34e96f95.svg",
@@ -9,11 +9,11 @@
     "static/media/star.svg": "/farpost-task-manager/static/media/star.25108e8798a98248471aab0a3712f57c.svg",
     "static/media/edit.svg": "/farpost-task-manager/static/media/edit.2eac95ab110f00cd4f3a63594255835a.svg",
     "static/media/cross.svg": "/farpost-task-manager/static/media/cross.6157b2f9cef61f43cfb9afb27dae1ef8.svg",
-    "main.746273b3.css.map": "/farpost-task-manager/static/css/main.746273b3.css.map",
-    "main.0176c3db.js.map": "/farpost-task-manager/static/js/main.0176c3db.js.map"
+    "main.7812e708.css.map": "/farpost-task-manager/static/css/main.7812e708.css.map",
+    "main.2cdfa8d8.js.map": "/farpost-task-manager/static/js/main.2cdfa8d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.746273b3.css",
-    "static/js/main.0176c3db.js"
+    "static/css/main.7812e708.css",
+    "static/js/main.2cdfa8d8.js"
   ]
 }
