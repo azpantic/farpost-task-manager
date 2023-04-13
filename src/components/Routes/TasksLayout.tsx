@@ -118,7 +118,7 @@ const TaskLayout: React.FC<TaskLayoutProps> = ({ tasks }) => {
 			</div>
 			{tasks.length == 0 && (
 			<div className="center-text">
-				<h2>You don`t have task at this day</h2>	
+				<h2>You don`t have task at group</h2>	
 			</div>) }
 		</div>
 	)
