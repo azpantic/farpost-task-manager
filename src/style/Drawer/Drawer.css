@@ -19,13 +19,20 @@ li{
 	padding-top: 1rem;
     padding-bottom: 1rem;
 
-
-	
 	
 	display: block;
 
 	
     text-decoration: inherit;
+
+	-webkit-transition: background-color 250ms ease-out;
+	-moz-transition: background-color 250ms ease-out;
+	-o-transition: background-color 250ms ease-out;
+	transition: background-color 250ms ease-out;
+}
+
+.nav-link:hover{
+	background-color:  rgba(136, 119, 139, 0.422); ;
 }
 
 .selected-nav-link{

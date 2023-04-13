@@ -109,7 +109,6 @@ const TaskLayout: React.FC<TaskLayoutProps> = ({ tasks }) => {
 				}/>
 			</div>
 
-
 			<div className="task-section">
 				{
 					( sortFuncId === -1 ?  tasks : allSortFunc[sortFuncId](tasks.slice()) ).map(task =>
@@ -117,6 +116,10 @@ const TaskLayout: React.FC<TaskLayoutProps> = ({ tasks }) => {
 					)
 				}
 			</div>
+			{tasks.length == 0 && (
+			<div className="center-text">
+				<h2>You don`t have task at this day</h2>	
+			</div>) }
 		</div>
 	)
 }
