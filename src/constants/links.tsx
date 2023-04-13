@@ -1,10 +1,12 @@
-import Home from "../components/Routes/Home"
+import TodayTask from "../components/Routes/TodayTasks";
+import AllTask from "../components/Routes/AllTasks"
+import ImportantTasks from "../components/Routes/ImportantTasks";
 import CompletedTasks from "../components/Routes/CompletedTasks"
-
+import UncomplitedTasks from "../components/Routes/UncompletedTasks";
 export interface ILink{
 	name: string,
 	path: string,
-	routeObject: JSX.Element,
+	routeObject: React.FC,
 
 }
 
@@ -13,26 +15,27 @@ export const links : ILink[] = [
 	{
 	  name: "Today's tasks",
 	  path: "/today",
-	  routeObject: Home(),
+	  routeObject: TodayTask,
 	},
 	{
 	  name: "All tasks",
 	  path: "/",
-	  routeObject: Home(),
+	  routeObject: AllTask,
 	},
 	{
 	  name: "Important tasks",
 	  path: "/important",
-	  routeObject: Home(),
+	  routeObject: ImportantTasks,
 	},
 	{
 	  name: "Completed tasks",
 	  path: "/completed",
-	  routeObject: CompletedTasks(),
+	  routeObject: CompletedTasks,
 	},
 	{
 	  name: "Uncompleted tasks",
 	  path: "/uncompleted",
-	  routeObject: Home(),
+	  routeObject: UncomplitedTasks,
+
 	},
   ];

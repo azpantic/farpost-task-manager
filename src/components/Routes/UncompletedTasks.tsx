@@ -5,14 +5,13 @@ import TaskLayout from "./TasksLayout"
 
 import { useAppSelector } from "../../store/hook"
 
-const ComplitedTasks : React.FC = () => {
+const UncomplitedTasks : React.FC = () => {
 	
 	var tasks = useAppSelector(state => state.tasks.list)
-	tasks = tasks.filter(task => task.isCompleted)
-
+	tasks = tasks.filter(task => !task.isCompleted)
 	return (
 		<div>
-			<h1 className="default-padding">Complited tasks (total task : {tasks.length})</h1>
+			<h1 className="default-padding">Uncomplited tasks (total task : {tasks.length})</h1>
 			
 			<TaskLayout tasks ={ tasks}  />
 
@@ -22,4 +21,4 @@ const ComplitedTasks : React.FC = () => {
 	)
 }
 
-export default ComplitedTasks
+export default UncomplitedTasks

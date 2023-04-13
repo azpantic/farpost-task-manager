@@ -1,0 +1,54 @@
+/* .task-section{
+	display: grid;
+
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr); 
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+} */
+
+.task-section {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	grid-template-rows: repeat(4, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+  }
+  
+  @media (max-width: 1000px) {
+	.task-section {
+	  grid-template-columns: 1fr;
+	}
+  }
+
+
+.add-task{
+
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+
+	--tw-border-opacity: 1;
+    /* border-color: white; */
+
+	border-style:dashed;
+
+	/* margin: 20px;s */
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 15px;
+	/* height: 15rem; */
+	
+	background-color: rgba(100, 116, 139, 0.075);
+	
+	-webkit-transition: background-color 250ms ease-out;
+	-moz-transition: background-color 250ms ease-out;
+	-o-transition: background-color 250ms ease-out;
+	transition: background-color 250ms ease-out;
+}
+
+.add-task:hover{
+	background-color: rgba(100, 116, 139, 0.267);
+}

@@ -1,0 +1,94 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* line-height: 1.4; */
+
+    background: #ffffff;
+
+    padding: 14px 28px;
+    border-radius: 20px;
+    
+    max-width: 600px;
+    min-width: 300px;
+
+    width: 40%;
+
+}
+
+.new-task-form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box-input {
+	background: #eee;
+
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border: 0 none;
+	/* width: 80% */
+}
+
+.new-task-discription{
+    resize: none;
+    height: 20%;
+}
+
+.edit-task-button{
+    
+    background-color: rgb(139 92 246);
+	border: none;
+	color: white;
+	/* padding: 10px 20px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+}
+
+.button-icon-cross{
+	/* color: white; */
+	width: 1.5rem;
+	-webkit-transition: color 250ms ease-out;
+	-moz-transition: color 250ms ease-out;
+	-o-transition: color 250ms ease-out;
+	transition: color 250ms ease-out;
+}
+
+.button-icon-cross:hover{
+
+	color: grey;
+}
+
+.modal-header{
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+
+	padding: 2%;
+}

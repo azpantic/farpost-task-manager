@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { ReactComponent as Arrow } from "../../../assets/arrow.svg";
 
+
+import "../../../style/Drawer/Directories/Directories.css"
+
 const Directories = () =>{
 	const [isDirectoriesOpen, setIsDirectoriesOpen] = useState<boolean>(true);
 	

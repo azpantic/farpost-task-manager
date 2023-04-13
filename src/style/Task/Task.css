@@ -1,0 +1,87 @@
+
+.task{
+
+	/* margin: 20px;s */
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 15px;
+	/* height: 15rem; */
+	
+	background-color:rgb(139 92 246);
+	
+	-webkit-transition: box-shadow 250ms ease-out;
+	-moz-transition: box-shadow 250ms ease-out;
+	-o-transition: box-shadow 250ms ease-out;
+	transition: box-shadow 250ms ease-out;
+}
+
+.task:hover{
+	box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.2);;
+}
+
+.date-string-with-icon{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.calendar-icon{
+	color: white;
+	width: 1rem;
+}
+
+.task-status-bar{
+
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 2px;
+	border-bottom-width: 0px;
+
+	--tw-border-opacity: 1;
+    border-color: white;
+
+	border-style:dashed;
+
+
+	display: flex;
+	flex-direction: row;
+
+	justify-content: space-between;
+}
+
+.pill-button{
+	background-color: #ddd;
+	border: none;
+	/* color: black; */
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+}
+
+.button-icon{
+	color: white;
+	width: 1.5rem;
+	-webkit-transition: color 250ms ease-out;
+	-moz-transition: color 250ms ease-out;
+	-o-transition: color 250ms ease-out;
+	transition: color 250ms ease-out;
+}
+
+.button-icon:hover{
+
+	color: rgb(172, 156, 156);
+}
+
+.icons-button-group{
+	display: flex;
+	flex-direction: row;
+
+	justify-content: normal;
+
+
+}	

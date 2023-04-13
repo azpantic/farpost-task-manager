@@ -1,9 +1,11 @@
 
 .center-text{
-	text-align: center;
+	margin: auto;
+	display: flex;
+	justify-content: center;
 }
 
-.default-text-paddin{
+.default-text-padding{
 
 	padding-left: 20px;
     padding-right: 20px;

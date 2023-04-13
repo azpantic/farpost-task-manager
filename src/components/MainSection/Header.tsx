@@ -3,6 +3,11 @@ import SearchBox from "./SearchBox";
 import "../../style/MainSection/Header.css"
 import "../../style/Text.css"
 
+
+import "../../style/Task/NewTaskModal.css"
+import NewTaskModal from "../Task/NewTaskModal"
+import { useState } from "react"
+
 const Header: React.FC = () => {
 
 	const date: Date = new Date();
@@ -33,15 +38,34 @@ const Header: React.FC = () => {
 		.toString()
 		.padStart(2, "0")}}`;
 
+
+	const [modal, setModal] = useState(false);
+
+	const toggleModal = () => {
+		setModal(!modal);
+	};
+
 	return (
 		<div className="header">
-			<SearchBox />
+			{/* <SearchBox /> */}
 
-			<time className="date" dateTime={dateTimeFormat}> 
+			<time className="date" dateTime={dateTimeFormat}>
 				<div className="text-center">Today: {todayDate}</div>
 			</time>
+			<div className="add-task-button" onClick={toggleModal}>
+				Add new task 
+			</div>
 
+			{modal && (
+				<div className="modal">
+					<div className="overlay" >
+						<NewTaskModal toggleModal={toggleModal} />
+					</div>
+				</div>)
+			}
 		</div>
+
+
 	)
 }
 

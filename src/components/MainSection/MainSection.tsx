@@ -1,17 +1,19 @@
 import { Route, Routes } from "react-router-dom";
-import  Header  from "./Header"
-import {links , ILink} from "../../constants/links"
+import Header from "./Header"
+import { links, ILink } from "../../constants/links"
+
+import "../../style/MainSection/MainSection.css"
 
 const MainSection: React.FC = () => {
 
 	return (
 		<main className="main-section">
 
-			<Header/>
+			<Header />
 			<Routes>
-			{links.map((link : ILink) => (
-				<Route path={link.path} element = {link.routeObject}   />
-        	))}
+				{links.map((link: ILink) => (
+					<Route path={link.path} element={<link.routeObject />} />
+				))}
 
 			</Routes>
 		</main>
