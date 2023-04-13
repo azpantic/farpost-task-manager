@@ -2,7 +2,7 @@
 
 Веб-сайт списка дел, созданный с помощью React JS, TypeScript, Redux Toolkit и других инструментов.
 
-([Пример интерфейса](https://github.com/azpantic/farpost-task-manager/blob/master/public/Task-App-Img.jpg)
+![Пример интерфейса](https://github.com/azpantic/farpost-task-manager/blob/master/public/Task-App-Img.jpg)
 
 ## Описание
 
@@ -30,7 +30,3 @@ npm install
 npm start
 ```
 
-## Observações
-
-- Os dados de tarefas, diretórios e darkmode ficam salvos no localStorage do seu navegador. Você pode clicar no botão "delete all data" para removê-los do localStorage.
-- Para fins demonstrativos, o aplicativo possui uma lista padrão de 3 tarefas e 1 diretório chamado "Main".
